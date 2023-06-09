@@ -82,13 +82,12 @@ body {
   main section{
     flex-basis:0;
     flex-grow:1; 
-    
+
   }
   
   main p a{
     color:#59331D;
-    text-decoration:none;
-    
+    text-decoration:none; 
   }
   
   main p a:hover{
@@ -157,6 +156,5 @@ body {
       flex-basis:65%;
       margin-left:1rem;
     }
-
 
   }
