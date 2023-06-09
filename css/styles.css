@@ -22,12 +22,13 @@ body {
     list-style-type: none;
     padding:0;
     display: flex;
-    flex-flow: row wrap;
+    flex-flow: column wrap;
     justify-content: center;
     gap:2rem;
+    margin-top:0;
   }
   
-  header img {
+  #logo img {
    width:14rem;
   }
   
@@ -50,7 +51,6 @@ body {
     color:#F2F2F2; 
     text-align:center;
     padding:1rem 0 1rem 0;
-    border-top:10px solid #D98555
   }
   
   footer ul {
@@ -72,9 +72,11 @@ body {
   main{
     padding:2rem;
     display: flex;
-    flex-flow: row wrap;
+    flex-flow: column wrap;
     justify-content: center;
     gap:2rem;
+    background: #ffffff url(https://assets.codepen.io/6306176/gulp-bean-bkgd.jpg) repeat-x bottom;
+    padding-bottom: 300px;
   }
   
   main section{
@@ -107,21 +109,53 @@ body {
     border:3px solid black;
   }
   
-  main article p{
+  main picture p{
     background-color:#59331D;
     color:#F2F2F2;
     padding:.75rem;
     margin:0;
   }
   
-  main article{
+  main picture{
     width:20rem;
     border-radius:1rem;
     overflow:hidden;
   }
   
-  main article img {
+  main picture img {
     display:block;
     object-fit:cover;
     width:100%
+  }
+
+
+  @media screen and (min-width:768px) and (max-width:992px){
+    main{
+      flex-flow:row wrap;
+    }
+  }
+
+  @media screen and (min-width:993px){
+    main{
+      flex-flow:row wrap;
+    }
+    
+    header ul{
+      flex-flow:row wrap;
+      justify-content: space-between;
+      align-items:flex-end;
+      margin-right:1rem;
+    }
+    
+    header {
+      text-align: left;
+      
+    }
+
+    #logo {
+      flex-basis:65%;
+      margin-left:1rem;
+    }
+
+
   }
