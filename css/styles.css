@@ -153,6 +153,7 @@ body {
     }
 
     #logo {
+      
       flex-basis:65%;
       margin-left:1rem;
     }
